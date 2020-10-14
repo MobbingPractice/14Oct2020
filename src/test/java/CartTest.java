@@ -27,4 +27,15 @@ public class CartTest {
 
         assertEquals(100, totalPrice);
     }
+
+    @Test
+    public void testAddOneBanana(){
+        Cart cart = new Cart();
+
+        Banana banana = new Banana(30);
+
+        cart.add(banana, 1);
+
+        assertEquals(30, cart.getTotalPrice());
+    }
 }

@@ -3,9 +3,9 @@ import java.util.List;
 
 public class Cart {
 	
-	List<Apple> items = new ArrayList<Apple>();
+	List<Fruit> items = new ArrayList<Fruit>();
     
-	public void add(Apple apple, int quantity) {
+	public void add(Fruit apple, int quantity) {
     	for(int i=0; i<quantity; i++)
     		items.add(apple);
     }
@@ -13,7 +13,7 @@ public class Cart {
     public double getTotalPrice() {
     	double totalPrice = 0;
     	
-    	for(Apple a: items) {
+    	for(Fruit a: items) {
     		totalPrice+=a.getPrice();
     	}
         return totalPrice;

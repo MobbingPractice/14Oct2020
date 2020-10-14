@@ -1,4 +1,4 @@
-public class Apple {
+public class Apple implements Fruit{
 	double price=0;
     public Apple(double price) {
     	this.price = price;
