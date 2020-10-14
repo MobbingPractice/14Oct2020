@@ -3,11 +3,12 @@ import java.util.List;
 
 public class Cart {
 	
-	List<Fruit> items = new ArrayList<Fruit>();
+	List<Fruit> items = new ArrayList<>();
+	Offer offer;
     
-	public void add(Fruit apple, int quantity) {
+	public void add(Fruit fruit, int quantity) {
     	for(int i=0; i<quantity; i++)
-    		items.add(apple);
+    		items.add(fruit);
     }
 
     public double getTotalPrice() {
@@ -18,4 +19,8 @@ public class Cart {
     	}
         return totalPrice;
     }
+
+	public void addOffer(Offer offer) {
+		this.offer = offer;
+	}
 }
